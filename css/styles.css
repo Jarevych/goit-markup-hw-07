@@ -75,10 +75,12 @@ a {
     flex-grow: 1;
     justify-content: space-between;
     margin: 0 auto;
+    /* padding: 0 15px; */
 }
 .header-nav{
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo {
     font-family: 'Raleway';
@@ -515,7 +517,7 @@ a {
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/mob-hero-bg.jpg);
     background-position: center;
-    width: 428px;
+    max-width: 428px;
     background-size: 428px, auto;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -538,7 +540,7 @@ a {
 .hero h1{
     font-size: 36px;
     line-height: 1.11;
-    width: 320px;
+    max-width: 320px;
     color: var(--clr-btn-hvr);
     margin: 0 auto;
     text-align: center;
