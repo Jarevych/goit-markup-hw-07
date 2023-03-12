@@ -318,6 +318,8 @@ a {
     padding-top: 80px;
         left: 50%;
             transform: translateX(-50%);
+
+            
 } 
 .mobile-container {
     position: fixed;
@@ -329,11 +331,14 @@ a {
     opacity: 0;
     pointer-events: none;
     background-color: #FFFFFF;
+            transform: scale(0);
+                transition: transform 500ms;
 }
 .mobile-container.is-open {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+        transform: scale(1);
 }
 
 .close-mob-btn {
