@@ -781,11 +781,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 72px;
 }
 .footer-logo-info {
     display: flex;
     flex-direction: column;
-    margin-right: 120px;
+    align-items: center;
+    /* margin-right: 120px; */
 }
 .footer-sm {
     display: flex;
@@ -798,21 +800,25 @@ a {
 .social-media {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .subscribe {
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .subscribe-form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 24px;
 }
 .subscribe-input {
     padding: 0;
-    width: 246px;
+    width: 398px;
     height: 38px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
