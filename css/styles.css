@@ -380,7 +380,7 @@ a {
 .feature-li {
     display: flex;
     flex-direction: column;
-    width: 396px;
+    max-width: 396px;
 }
 
 .features-list {
@@ -816,9 +816,9 @@ a {
     align-items: center;
     gap: 24px;
 }
-.subscribe-input {
+.subscribe-input {  
     padding: 0;
-    width: 398px;
+    max-width: 398px;
     height: 38px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
