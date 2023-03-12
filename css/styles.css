@@ -161,7 +161,6 @@ a {
     background:none;
     border: none;
     line-height: 0;
-    z-index: 5;
 }
 
 @media screen and (min-width: 768px) {
@@ -247,16 +246,16 @@ a {
 .mob-address-link:hover ,
 .mob-address-link:focus {
     color: var(--clr-link);
-        transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-nav-btn:focus,
 .mob-nav-btn:hover {
-        color: var(--clr-link);
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--clr-link);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* social links for mobile menu */
@@ -328,6 +327,7 @@ a {
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 100;
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -358,7 +358,7 @@ a {
         66, 0.1);
     background-color: rgba (231,
         233,
-        252 0.1);
+        252, 0.1);
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -372,7 +372,7 @@ a {
 
 /* features */
 .features {
-    padding-top: 120px;
+    padding: 96px 0;
 }
 .features-title {
     margin-bottom: 8px;
@@ -380,20 +380,22 @@ a {
 .feature-li {
     display: flex;
     flex-direction: column;
-    width: 264px;
+    width: 396px;
 }
 
 .features-list {
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
     padding: 0;
 }
 
 .features-items {
+    display: none;
     width: 100%;
     height: 112px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     background-color: #F4F4FD;
@@ -402,6 +404,7 @@ a {
 }
 
 .features-icons {
+    display: none;
     width: 60px;
     height: 64px;
     background-color: #F4F4FD;
@@ -409,7 +412,8 @@ a {
 }
 
 .features-list h3 {
-    font-size: 20px;
+    text-align: center;
+    font-size: 36px;
     line-height: 1.2;
     color: #2E2F42;
 }
@@ -418,20 +422,29 @@ a {
     font-size: 16px;
     line-height: 1.5;
     color: var(--clr-main);
+    text-align: justify;
 }
 /* about us */
-.about-us {
-    padding: 120px 0;
-}
-.works-title {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 72px;
-}
-.ourworks {
-    display: flex;
-    gap: 24px;
-    padding: 0;
+.about-us {display: none;}
+
+@media screen and (min-width: 1200px) {
+    .about-us {
+        display: flex;
+        padding: 120px 0;
+    }
+
+    .works-title {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 72px;
+    }
+
+    .ourworks {
+        display: flex;
+        gap: 24px;
+        padding: 0;
+    }
+    
 }
 
 
@@ -498,8 +511,8 @@ a {
 .employee {
     background-color: #F4F4FD;
     display: flex;
-    flex-direction: row;
-    padding: 120px 0;
+    padding: 96px 0;
+    text-align: center;
 }
 .empl-social-list {
     display: flex;
@@ -534,11 +547,15 @@ a {
     line-height: 1.5;
     color: var(--clr-main);
 }
+.employee-title {
+    margin-bottom: 72px;
+}
 .employee-list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 24px;
+    gap: 72px;
     margin: 0;
     padding: 0;
     background-color: #F4F4FD;
@@ -600,7 +617,7 @@ a {
 }
 .portfolio {
     display: flex;
-    z-index: 2;
+    /* z-index: 2; */
     flex-wrap: wrap;
     gap: 24px;
     /* flex-basis: calc((100%-48)/3); */
@@ -629,7 +646,7 @@ a {
 }
 .img-desc {
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     max-width: 360px;
     border: 1px solid #E7E9FC;
     background-color: #FFFFFF;
@@ -682,12 +699,14 @@ a {
 /* customers */
 .customer {
     text-align: center;
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .customer-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: 72px;
     justify-content: center;
     margin-top: 72px;
 }
@@ -760,6 +779,8 @@ a {
 }
 .footer-block {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .footer-logo-info {
     display: flex;
