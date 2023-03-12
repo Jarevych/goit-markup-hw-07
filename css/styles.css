@@ -585,6 +585,7 @@ a {
 /* portfolio buttons */
 .filters {
     font-size: 16px;
+    max-width: 398px;
     line-height: 1.5;
     display: flex;
     flex-wrap: wrap;
