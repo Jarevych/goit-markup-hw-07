@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-nav">
         <nav class="nav-items">
             <!-- логотип -->
             <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
@@ -25,6 +25,11 @@
                 <li><a href="" class="site-nav-btn">Contacts</a></li>
             </ul>
         </nav>
+        <button type="button" class="burger-btn js-open-menu">
+            <svg class="burger-menu">
+                <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+        </button>
         <!-- адреса -->
         <address>
             <ul class="address">
@@ -32,6 +37,65 @@
                 <li><a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+        </div>
+        <div class="mobile-container js-menu-container" id="mobile-menu">
+            <div class="mobile-menu">
+                <button type="button" class="close-mob-btn js-close-menu">
+                    <svg class="close-btn">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="mob-nav-list">
+                        <li><a href="./index.html" class="mob-nav-btn">Studio</a></li>
+                        <li><a href="./portfolio.html" class="mob-nav-btn">Portfolio</a></li>
+                        <li><a href="" class="mob-nav-btn">Contacts</a></li>
+                    </ul>
+                </nav>
+                        <button type="button" class="burger-btn js-open-menu">
+                            <svg class="burger-menu">
+                                <use href="./images/icons.svg#icon-burger"></use>
+                            </svg>
+                        </button>
+
+                <address>
+                    <ul class="mob-address-list">
+                        <li><a class="mob-address-link mob-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="mob-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <ul class="mob-social-list">
+                    <li class="mob-social-items">
+                        <a class="mob-social-link" href="">
+                            <svg class="mob-social-icons">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-social-items">
+                        <a class="mob-social-link" href="">
+                            <svg class="mob-social-icons">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-social-items">
+                        <a class="mob-social-link" href="">
+                            <svg class="mob-social-icons">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-social-items">
+                        <a class="mob-social-link" href="">
+                            <svg class="mob-social-icons">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+        
+            </div>
         </div>
     </header>
     <main>

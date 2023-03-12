@@ -161,6 +161,7 @@ a {
     background:none;
     border: none;
     line-height: 0;
+    z-index: 5;
 }
 
 @media screen and (min-width: 768px) {
