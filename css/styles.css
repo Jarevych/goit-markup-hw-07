@@ -807,11 +807,14 @@ a {
 
 .subscribe {
     /* margin-left: 80px; */
+    /* max-width: 398px; */
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
+/* .input-label {
+    width: 100%;
+} */
 .subscribe-form {
     display: flex;
     flex-direction: column;
@@ -820,6 +823,7 @@ a {
 }
 .subscribe-input {  
     padding: 0;
+    width: 100%;
     max-width: 398px;
     height: 38px;
     border: 1px solid rgba(255, 255, 255, 0.3);
