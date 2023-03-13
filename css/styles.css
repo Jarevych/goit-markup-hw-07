@@ -770,6 +770,7 @@ a {
     }
     .customer-list {
         gap: 24px;
+        width: calc(100% - 30px);   
     }
 }
 .customer-link:hover,
