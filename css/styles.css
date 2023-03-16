@@ -674,6 +674,14 @@ a {
     margin-bottom: 72px;
     padding: 0;
 }
+@media screen and (min-width: 1200px) {
+    .filters {
+        flex-wrap: nowrap;
+        max-width: 1200px;
+        justify-content: center;
+    }    
+}
+
 .btn-all:hover,
 .btn-all:focus {
     background-color: var(--clr-link);
