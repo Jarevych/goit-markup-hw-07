@@ -394,7 +394,7 @@ a {
 
 /* features */
 .features {
-    padding: 96px 0;
+    padding-top: 96px;
 }
 .features-title {
     margin-bottom: 8px;
