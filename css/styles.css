@@ -394,7 +394,7 @@ a {
 
 /* features */
 .features {
-    padding-top: 96px;
+    padding: 96px 0;
 }
 .features-title {
     margin-bottom: 8px;
@@ -454,6 +454,9 @@ a {
     }
     .features-icons {
         display: flex;
+    }
+    .features {
+        padding-bottom: 0;
     }
         
 }
